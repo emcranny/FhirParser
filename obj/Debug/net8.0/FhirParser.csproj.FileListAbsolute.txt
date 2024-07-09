@@ -23,3 +23,5 @@ c:\Users\ecranny\source\Telemed\FhirParser\obj\Debug\net8.0\FhirParser.pdb
 c:\Users\ecranny\source\Telemed\FhirParser\obj\Debug\net8.0\FhirParser.genruntimeconfig.cache
 c:\Users\ecranny\source\Telemed\FhirParser\obj\Debug\net8.0\ref\FhirParser.dll
 c:\Users\ecranny\source\Telemed\FhirParser\bin\Debug\net8.0\patientresource.json
+c:\Users\ecranny\source\Telemed\FhirParser\bin\Debug\net8.0\bundleresource.json
+c:\Users\ecranny\source\Telemed\FhirParser\obj\Debug\net8.0\FhirParser.sourcelink.json

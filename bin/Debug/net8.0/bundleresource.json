@@ -1,0 +1,759 @@
+{
+	"resourceType": "Bundle",
+	"id": "b9bdf6a9-aff8-4c4b-9d43-e6b51618cde2",
+	"type": "collection",
+	"total": 11,
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "Patient",
+				"id": "a2738a28-88e0-4718-8ec8-d9cd3a77f4ca",
+				"extension": [
+					{
+						"id": "ehr-system-id",
+						"url": "https://spmid.arborian-health.com/extension/ehr_system",
+						"valueCode": "ARBORIAN-PCC"
+					}
+				],
+				"identifier": [
+					{
+						"use": "secondary",
+						"system": "http://spmid.arborian-health.com/coding-system/arborian-internal-id",
+						"value": "235333"
+					},
+					{
+						"use": "official",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							],
+							"text": "Medical Record Number"
+						},
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-patient",
+						"value": "253B112E-9815-4DFD-AEE0-B92E9BE747D1.235333"
+					},
+					{
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							],
+							"text": "Medical Record Number"
+						},
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-organization-master-patient",
+						"value": "253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301"
+					},
+					{
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							],
+							"text": "Medical Record Number"
+						},
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-patient-external",
+						"value": "95503"
+					},
+					{
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MA",
+									"display": "Patient Medicaid Number"
+								}
+							],
+							"text": "Patient Medicaid Number"
+						},
+						"system": "http://hl7.org/fhir/sid/us-medicaid",
+						"value": "739540C3-"
+					},
+					{
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MC",
+									"display": "Patient Medicare Number"
+								}
+							],
+							"text": "Patient Medicare Number"
+						},
+						"system": "http://hl7.org/fhir/sid/us-medicare",
+						"value": "E44F752A-"
+					},
+					{
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							],
+							"text": "Medical Record Number"
+						},
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-medical-record-number",
+						"value": "95503"
+					},
+					{
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "SS",
+									"display": "Social Security Number"
+								}
+							],
+							"text": "Social Security Number"
+						},
+						"system": "http://hl7.org/fhir/sid/us-ssn",
+						"value": "110-33-5910"
+					}
+				],
+				"active": true,
+				"name": [
+					{
+						"use": "official",
+						"family": "Whalen",
+						"given": [
+							"Cassaundra"
+						]
+					}
+				],
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "(352) 555-8675",
+						"use": "home"
+					}
+				],
+				"gender": "male",
+				"birthDate": "1932-10-12",
+				"address": [
+					{
+						"use": "home",
+						"text": "314 Schellden Road\nDade City, FL 33526",
+						"line": [
+							"314 Schellden Road"
+						],
+						"state": "FL",
+						"postalCode": "33526",
+						"country": "United States"
+					},
+					{
+						"use": "home",
+						"text": "708 Garrah Lane\nDade City, FL 33525",
+						"line": [
+							"708 Garrah Lane"
+						],
+						"state": "FL",
+						"postalCode": "33525",
+						"country": "USA"
+					}
+				],
+				"communication": [
+					{
+						"language": {
+							"coding": [
+								{
+									"code": "en",
+									"display": "English"
+								}
+							],
+							"text": "English"
+						}
+					}
+				],
+				"managingOrganization": {
+					"reference": "Facility/253B112E-9815-4DFD-AEE0-B92E9BE747D1.22",
+					"identifier": {
+						"use": "official",
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-facility",
+						"value": "253B112E-9815-4DFD-AEE0-B92E9BE747D1.22"
+					}
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "acbb4e08-d34f-434d-a20f-57ccb7aba2c1",
+				"identifier": [
+					{
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-observation-id",
+						"value": "6.0"
+					}
+				],
+				"status": "registered",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "vital-signs",
+								"display": "Vital Signs"
+							}
+						],
+						"text": "Vital Signs"
+					}
+				],
+				"code": {
+					"text": "painLevel"
+				},
+				"subject": {
+					"reference": "Patient/253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301",
+					"identifier": {
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							],
+							"text": "Medical Record Number"
+						},
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-organization-master-patient",
+						"value": "253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301"
+					}
+				},
+				"effectiveDateTime": "2016-06-08T00:41:15+00:00",
+				"valueQuantity": {
+					"value": 6,
+					"system": "http://unitsofmeasure.org"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "a1489bd4-be9f-4e7e-8495-046fc2b42a8b",
+				"identifier": [
+					{
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-observation-id",
+						"value": "20.0"
+					}
+				],
+				"status": "registered",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "vital-signs",
+								"display": "Vital Signs"
+							}
+						],
+						"text": "Vital Signs"
+					}
+				],
+				"code": {
+					"text": "respirations"
+				},
+				"subject": {
+					"reference": "Patient/253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301",
+					"identifier": {
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							],
+							"text": "Medical Record Number"
+						},
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-organization-master-patient",
+						"value": "253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301"
+					}
+				},
+				"effectiveDateTime": "2016-06-04T01:40:00+00:00",
+				"valueQuantity": {
+					"value": 20,
+					"unit": "Breaths/min",
+					"system": "http://unitsofmeasure.org",
+					"code": "Breaths/min"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "4e05702b-6a19-4dec-ba78-3e51f88c016f",
+				"identifier": [
+					{
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-observation-id",
+						"value": "0"
+					}
+				],
+				"status": "registered",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "vital-signs",
+								"display": "Vital Signs"
+							}
+						],
+						"text": "Vital Signs"
+					}
+				],
+				"code": {
+					"text": "bloodPressure"
+				},
+				"subject": {
+					"reference": "Patient/253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301",
+					"identifier": {
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							],
+							"text": "Medical Record Number"
+						},
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-organization-master-patient",
+						"value": "253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301"
+					}
+				},
+				"effectiveDateTime": "2016-06-04T01:40:00+00:00",
+				"valueQuantity": {
+					"value": 0,
+					"unit": "mmHg",
+					"system": "http://unitsofmeasure.org",
+					"code": "mmHg"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "db6d61fe-cbdd-415d-8161-dac4a83a1c2e",
+				"identifier": [
+					{
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-observation-id",
+						"value": "97.9"
+					}
+				],
+				"status": "registered",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "vital-signs",
+								"display": "Vital Signs"
+							}
+						],
+						"text": "Vital Signs"
+					}
+				],
+				"code": {
+					"text": "temperature"
+				},
+				"subject": {
+					"reference": "Patient/253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301",
+					"identifier": {
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							],
+							"text": "Medical Record Number"
+						},
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-organization-master-patient",
+						"value": "253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301"
+					}
+				},
+				"effectiveDateTime": "2016-06-04T01:40:00+00:00",
+				"valueQuantity": {
+					"value": 97.9,
+					"unit": "°F",
+					"system": "http://unitsofmeasure.org",
+					"code": "°F"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "321051b6-94ae-4252-8ed4-aa70a14c9ea9",
+				"identifier": [
+					{
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-observation-id",
+						"value": "74.0"
+					}
+				],
+				"status": "registered",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "vital-signs",
+								"display": "Vital Signs"
+							}
+						],
+						"text": "Vital Signs"
+					}
+				],
+				"code": {
+					"text": "heartrate"
+				},
+				"subject": {
+					"reference": "Patient/253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301",
+					"identifier": {
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							],
+							"text": "Medical Record Number"
+						},
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-organization-master-patient",
+						"value": "253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301"
+					}
+				},
+				"effectiveDateTime": "2016-06-04T01:40:00+00:00",
+				"valueQuantity": {
+					"value": 74,
+					"unit": "bpm",
+					"system": "http://unitsofmeasure.org",
+					"code": "bpm"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "5876b8c4-3be2-4dcc-9568-04d80f77d694",
+				"identifier": [
+					{
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-observation-id",
+						"value": "136.0"
+					}
+				],
+				"status": "registered",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "vital-signs",
+								"display": "Vital Signs"
+							}
+						],
+						"text": "Vital Signs"
+					}
+				],
+				"code": {
+					"text": "weight"
+				},
+				"subject": {
+					"reference": "Patient/253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301",
+					"identifier": {
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							],
+							"text": "Medical Record Number"
+						},
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-organization-master-patient",
+						"value": "253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301"
+					}
+				},
+				"effectiveDateTime": "2016-05-06T16:27:00+00:00",
+				"valueQuantity": {
+					"value": 136,
+					"unit": "Lbs",
+					"system": "http://unitsofmeasure.org",
+					"code": "Lbs"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "a739fbce-942d-4802-8eec-1d28cf8e14db",
+				"identifier": [
+					{
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-observation-id",
+						"value": "98.0"
+					}
+				],
+				"status": "registered",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "vital-signs",
+								"display": "Vital Signs"
+							}
+						],
+						"text": "Vital Signs"
+					}
+				],
+				"code": {
+					"text": "oxygenSaturation"
+				},
+				"subject": {
+					"reference": "Patient/253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301",
+					"identifier": {
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							],
+							"text": "Medical Record Number"
+						},
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-organization-master-patient",
+						"value": "253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301"
+					}
+				},
+				"effectiveDateTime": "2016-03-27T13:20:00+00:00",
+				"valueQuantity": {
+					"value": 98,
+					"unit": "%",
+					"system": "http://unitsofmeasure.org",
+					"code": "%"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "be18d851-4914-4d99-bba8-fe031325b9f6",
+				"identifier": [
+					{
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-observation-id",
+						"value": "66.0"
+					}
+				],
+				"status": "registered",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "vital-signs",
+								"display": "Vital Signs"
+							}
+						],
+						"text": "Vital Signs"
+					}
+				],
+				"code": {
+					"text": "height"
+				},
+				"subject": {
+					"reference": "Patient/253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301",
+					"identifier": {
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							],
+							"text": "Medical Record Number"
+						},
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-organization-master-patient",
+						"value": "253B112E-9815-4DFD-AEE0-B92E9BE747D1.106301"
+					}
+				},
+				"effectiveDateTime": "2015-12-18T17:50:00+00:00",
+				"valueQuantity": {
+					"value": 66,
+					"unit": "Inches",
+					"system": "http://unitsofmeasure.org",
+					"code": "Inches"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Practitioner",
+				"id": "19cab728-341b-4edf-bd0b-cf90cf94d230",
+				"identifier": [
+					{
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-pracitioner-id",
+						"value": "234768"
+					},
+					{
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "PRN",
+									"display": "Provider number"
+								}
+							],
+							"text": "Provider number"
+						},
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "1215290101"
+					}
+				],
+				"name": [
+					{
+						"use": "official",
+						"family": "Barth",
+						"given": [
+							"Cheri"
+						]
+					}
+				],
+				"telecom": [
+					{
+						"system": "phone",
+						"use": "work"
+					},
+					{
+						"system": "fax",
+						"use": "work"
+					},
+					{
+						"system": "phone",
+						"use": "mobile"
+					}
+				],
+				"gender": "unknown",
+				"address": [
+					{
+						"use": "work",
+						"text": ", FL",
+						"line": [
+							""
+						],
+						"state": "FL",
+						"country": "United States"
+					}
+				],
+				"qualification": [
+					{
+						"code": {
+							"text": "Nurse Practitioner"
+						}
+					}
+				]
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Practitioner",
+				"id": "3664b14b-d074-4276-8433-646595ba7f8a",
+				"identifier": [
+					{
+						"system": "http://spmid.arborian-health.com/coding-system/pcc-pracitioner-id",
+						"value": "102698"
+					},
+					{
+						"use": "secondary",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "PRN",
+									"display": "Provider number"
+								}
+							],
+							"text": "Provider number"
+						},
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "1205879459"
+					}
+				],
+				"name": [
+					{
+						"use": "official",
+						"family": "Shipley",
+						"given": [
+							"Luella"
+						]
+					}
+				],
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "(813) 555-9890",
+						"use": "work"
+					},
+					{
+						"system": "fax",
+						"value": "(352) 555-2727",
+						"use": "work"
+					},
+					{
+						"system": "phone",
+						"value": "(352) 555-3502",
+						"use": "mobile"
+					}
+				],
+				"gender": "unknown",
+				"address": [
+					{
+						"use": "work",
+						"text": "898 Landon Road\nSan Antonio, FL 33576",
+						"line": [
+							"898 Landon Road"
+						],
+						"state": "FL",
+						"postalCode": "33576",
+						"country": "United States"
+					}
+				],
+				"qualification": [
+					{
+						"code": {
+							"text": "Attending Physician"
+						}
+					}
+				]
+			}
+		}
+	]
+}

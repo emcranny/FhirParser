@@ -15,6 +15,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
 
+    <None Include="bundleresource.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+
+
   </ItemGroup>
 
 </Project>

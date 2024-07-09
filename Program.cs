@@ -9,6 +9,10 @@ class Program
         var patient = new PatientResource();
 
         patient.Parse();
+
+        var bundle = new BundleResource();
+
+        bundle.Parse();
     }
 
 }

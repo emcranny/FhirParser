@@ -1,6 +1,5 @@
 using Hl7.Fhir.Model;
 using Hl7.Fhir.Serialization;
-using Hl7.FhirPath.Expressions;
 
 public class PatientResource
 {
