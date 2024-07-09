@@ -1,0 +1,184 @@
+{
+    "resourceType": "Patient",
+    "id": "5556d40f-1d2d-4101-8671-122178ec1a4e",
+    "extension": [
+        {
+            "id": "ehr-system-id",
+            "url": "https://spmid.arborian-health.com/extension/ehr_system",
+            "valueCode": "ARBORIAN-PCC-SSO"
+        },
+        {
+            "id": "religion",
+            "url": "https://spmid.arborian-health.com/extension/religion",
+            "valueCode": "alpha-gamma"
+        }
+    ],
+    "identifier": [
+        {
+            "use": "secondary",
+            "system": "http://spmid.arborian-health.com/coding-system/arborian-internal-id",
+            "value": "28"
+        },
+        {
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "MR",
+                        "display": "Medical Record Number"
+                    }
+                ],
+                "text": "Medical Record Number"
+            },
+            "system": "http://spmid.arborian-health.com/coding-system/pcc-patient",
+            "value": "C7DAC9A2-B843-48F2-BD90-2D348D97ADD2.28"
+        },
+        {
+            "use": "secondary",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "MR",
+                        "display": "Medical Record Number"
+                    }
+                ],
+                "text": "Medical Record Number"
+            },
+            "system": "http://spmid.arborian-health.com/coding-system/pcc-organization-master-patient",
+            "value": "C7DAC9A2-B843-48F2-BD90-2D348D97ADD2.28"
+        },
+        {
+            "use": "secondary",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "MR",
+                        "display": "Medical Record Number"
+                    }
+                ],
+                "text": "Medical Record Number"
+            },
+            "system": "http://spmid.arborian-health.com/coding-system/pcc-patient-external",
+            "value": "826"
+        },
+        {
+            "use": "secondary",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "MA",
+                        "display": "Patient Medicaid Number"
+                    }
+                ],
+                "text": "Patient Medicaid Number"
+            },
+            "system": "http://hl7.org/fhir/sid/us-medicaid",
+            "value": "00501616113"
+        },
+        {
+            "use": "secondary",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "MC",
+                        "display": "Patient Medicare Number"
+                    }
+                ],
+                "text": "Patient Medicare Number"
+            },
+            "system": "http://hl7.org/fhir/sid/us-medicare",
+            "value": ""
+        },
+        {
+            "use": "secondary",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "MR",
+                        "display": "Medical Record Number"
+                    }
+                ],
+                "text": "Medical Record Number"
+            },
+            "system": "http://spmid.arborian-health.com/coding-system/pcc-medical-record-number",
+            "value": "826"
+        },
+        {
+            "use": "secondary",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "SS",
+                        "display": "Social Security Number"
+                    }
+                ],
+                "text": "Social Security Number"
+            },
+            "system": "http://hl7.org/fhir/sid/us-ssn",
+            "value": "123-98-1234"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "use": "official",
+            "family": "Payne",
+            "given": [
+                "Harrison"
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "(304) 522-0032",
+            "use": "home"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1945-02-20",
+    "address": [
+        {
+            "use": "home",
+            "text": ",",
+            "line": [
+                ""
+            ]
+        },
+        {
+            "use": "home",
+            "text": ",",
+            "line": [
+                ""
+            ]
+        }
+    ],
+    "communication": [
+        {
+            "language": {
+                "coding": [
+                    {
+                        "code": "en",
+                        "display": "English"
+                    }
+                ],
+                "text": "English"
+            }
+        }
+    ],
+    "managingOrganization": {
+        "reference": "Facility/C7DAC9A2-B843-48F2-BD90-2D348D97ADD2.1",
+        "identifier": {
+            "use": "official",
+            "system": "http://spmid.arborian-health.com/coding-system/pcc-facility",
+            "value": "C7DAC9A2-B843-48F2-BD90-2D348D97ADD2.1"
+        }
+    }
+}
