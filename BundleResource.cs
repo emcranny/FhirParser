@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using Hl7.Fhir.Model;
 using Hl7.Fhir.Serialization;
 using Hl7.FhirPath.Expressions;
@@ -17,7 +18,7 @@ public class BundleResource
 
         var parser = new FhirJsonParser();
 
-        Hl7.Fhir.Model.Bundle bundle = parser.Parse<Hl7.Fhir.Model.Bundle>(jsonResource);
+        Bundle bundle = parser.Parse<Bundle>(jsonResource);
 
         if (bundle is not null)
         {
@@ -27,26 +28,57 @@ public class BundleResource
                     e.Resource.TypeName == "Observation"
                 );
 
-            foreach(var obs in observations) {
-                var obsResource = obs.Resource;
+            foreach (var observation in observations) {
 
-                var test2 = obsResource.ToList();
+                foreach (var child in observation.Children) {
+                
+                    var testDict = child.ToDictionary();
 
-                var test3 = test2[0];
+                    CodeableConcept testItem = testDict["code"] as CodeableConcept;
 
+                    if (testItem != null) {
+                        var test = testItem.Text;
+
+                        if (test == "weight") {
+                        
+                        Valu vq = testDict["valueQuantity"] as 
+                        }
+                    }
+                }
+                // var weightObject = observation.Resource
+                //     .ToList()
+                //     .Find(item => 
+                //         item.Key == "code" &&
+                //         item.Value.ToString() == "weight"
+                // );
+
+                // var testList = observation.Resource.ToList();
+
+                // foreach (var item in testList) {
+                //     var test0 = item.Key;
+                //     var test1 = item.Value.ToString();
+            
+                // }
+            //     var test2 = obsResource.ToList();
+
+            //     var test2a = test2[0].Key;
+            //     var test2b = test2[0].Value;
+            //     var test2c = test2[1].Key;
+            //     var test2d = test2[1].Value;
+
+            //     var test3 = test2[0];
             }    
 
 
-            foreach(var item in bundle.Entry) {
+            // foreach(var item in bundle.Entry) {
 
-                var test1 = item.GetType().Name;
-                var test2 = item.Resource.Id;
+            //     var test1 = item.GetType().Name;
+            //     var test2 = item.Resource.Id;
 
-                //var name = item.Resource;
+            //     //var name = item.Resource;
                 
-            }
+            // }
            // var test = bundle.Entry.Find(item => item.Resource.Id == Hl7.Fhir.Model.ResourceType.Observation);
         }
-
     }
 }
