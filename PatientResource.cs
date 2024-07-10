@@ -16,11 +16,11 @@ public class PatientResource
 
         var parser = new FhirJsonParser();
 
-        Hl7.Fhir.Model.Patient patient = parser.Parse<Hl7.Fhir.Model.Patient>(jsonResource);
+        Patient patient = parser.Parse<Patient>(jsonResource);
 
         if (patient is not null)
         {
-            // get the OmpId
+            // get identifier
             foreach (var item in patient.Identifier)
             {
                 var use = item.Use;
@@ -57,7 +57,9 @@ public class PatientResource
             }
 
             // get full name
-            var humanName = patient.Name.Find(item => item.Use == HumanName.NameUse.Official);
+            var humanName = patient.Name.Find(item => 
+                item.Use == HumanName.NameUse.Official
+                );
 
             var patientName = humanName?.Given.FirstOrDefault() + " " + humanName?.Family;    
 
