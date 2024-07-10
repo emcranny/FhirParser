@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FhirParser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e2b7beb7e1537b7a6b59f864b81239d8bf7fda4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+448f36d72c93d2d2d9a318ff9fb4620bac67cc64")]
 [assembly: System.Reflection.AssemblyProductAttribute("FhirParser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FhirParser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
